@@ -1,0 +1,67 @@
+body {
+  background: linear-gradient(135deg, #ff4e50, #1f1c18);
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+  padding-bottom: 40px;
+}
+
+.dark-mode {
+  background: linear-gradient(135deg, #1f1c18, #ff4e50);
+  background-attachment: fixed;
+  background-size: cover;
+  color: #f8f9fa;
+}
+
+.place-title {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 30px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.carousel img {
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+.btn-custom {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 50px;
+  background: #ff4e50;
+  border: none;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+  background: #fc913a;
+  transform: scale(1.05);
+}
+
+@media (max-width: 576px) {
+  .place-title {
+    font-size: 2rem;
+  }
+
+  .carousel img {
+    max-height: 250px;
+  }
+
+  p {
+    padding: 0 15px;
+    font-size: 1rem;
+  }
+}
